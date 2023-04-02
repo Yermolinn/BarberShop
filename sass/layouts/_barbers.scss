@@ -1,0 +1,94 @@
+.barbers {
+  background-color: #f7f7f7;
+}
+
+.barbers__text {
+  margin-bottom: 20px;
+  color: #303030;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 120px;
+  }
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+  color: #303030;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 120px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1199px) {
+    gap: 64px;
+  }
+  gap: 30px;
+}
+
+.cards__item {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+}
+
+.cards__content {
+  margin-top: 30px;
+}
+
+.cards__title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.cards__text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: fill 260ms linear;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  fill: #303030;
+  transition: fill 250ms linear;
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--accent-color);
+  }
+}
